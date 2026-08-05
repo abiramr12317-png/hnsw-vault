@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HNSW Vault</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>HNSW Vault</h1>
+    <p>Find every photo of a specific person in a large event photo collection.</p>
+  </header>
+
+  <section class="panel">
+    <h2>1. Upload event photos</h2>
+    <p class="hint">Select all the photos from an event. Do this once (or whenever new photos are added).</p>
+    <input type="file" id="uploadInput" multiple accept="image/*">
+    <button id="uploadBtn">Upload &amp; Index</button>
+    <p id="uploadStatus"></p>
+  </section>
+
+  <section class="panel">
+    <h2>2. Search by face</h2>
+    <p class="hint">Upload one clear photo of the person's face you want to find.</p>
+    <input type="file" id="searchInput" accept="image/*">
+    <button id="searchBtn">Search</button>
+    <p id="searchStatus"></p>
+  </section>
+
+  <section class="panel">
+    <h2>Results</h2>
+    <div id="results" class="gallery"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

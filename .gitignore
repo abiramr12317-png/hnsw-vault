@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+storage/originals/*
+storage/thumbnails/*
+storage/index_data/*
+storage/metadata.db
+!storage/originals/.gitkeep
+!storage/thumbnails/.gitkeep
+!storage/index_data/.gitkeep

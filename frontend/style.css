@@ -1,0 +1,64 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: #222;
+}
+
+header h1 {
+  margin-bottom: 4px;
+}
+
+header p {
+  color: #666;
+  margin-top: 0;
+}
+
+.panel {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+
+.hint {
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 0;
+}
+
+button {
+  margin-left: 10px;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+#uploadStatus, #searchStatus {
+  font-size: 0.9em;
+  color: #444;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.gallery figure {
+  margin: 0;
+  width: 140px;
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.gallery figcaption {
+  font-size: 0.75em;
+  color: #555;
+  word-break: break-all;
+}
