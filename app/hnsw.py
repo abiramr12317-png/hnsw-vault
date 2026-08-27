@@ -16,9 +16,12 @@ import pickle
 import numpy as np
 
 
-def euclidean_distance(a, b):
-    return float(np.linalg.norm(a - b))
+#def euclidean_distance(a, b):
+#    return float(np.linalg.norm(a - b))
 
+def euclidean_distance(a, b):   #cosine similarity
+    similarity = np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
+    return float(1 - similarity)
 
 class HNSWIndex:
     def __init__(self, dim, M=16, ef_construction=200, ef_search=50,

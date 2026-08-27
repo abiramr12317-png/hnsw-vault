@@ -7,7 +7,7 @@ HNSW_EF_SEARCH = 50            # candidate list size while searching (higher = b
 
 # Face match threshold (euclidean distance on face_recognition's 128-d embeddings).
 # face_recognition's own convention: distance < 0.55 usually means "same person".
-MATCH_THRESHOLD = 0.3
+MATCH_THRESHOLD = 0.065
 
 # Storage paths (relative to project root)
 ORIGINALS_DIR = "storage/originals"
